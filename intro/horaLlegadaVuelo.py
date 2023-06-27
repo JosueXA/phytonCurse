@@ -39,13 +39,13 @@ def calcular_horario_llegada( hora_salida: int, minuto_salida: int, segundo_sali
       minuto_str = "0" + minuto_str
     if len(segundo_str) < 2:
       segundo_str = "0" + segundo_str
-    
+
     cadena = hora_str + ":" + minuto_str + ":" + segundo_str
     return cadena
 
 res = calcular_horario_llegada(22, 15, 30, 1, 30, 35)
 
-print('Es la hora de arribo:', res)
+print('La hora de arribo es:', res)
 """
 def calcular_horario_llegada_condicion10( hora_salida: int, minuto_salida: int, segundo_salida: int, duracion_horas: int, duracion_minutos: int, duracion_segundos: int) -> str:
     arribo_hora = hora_salida + duracion_horas
