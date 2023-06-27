@@ -1,0 +1,17 @@
+import calculadora_indices as calc
+
+def ejecutar_calcular_calorias_en_actividad() -> None:
+    peso = float( input('Ingrese el peso de la persona (en kilogramos): ') )
+    altura = float( input('Ingrese la altura de la persona (en centímetros): ') )
+    edad = int( input('Ingrese la edad de la persona (en años): ') )
+    valor_genero = int( input('Ingrese el valor 5 en caso de ser hombre y -161 en caso de ser mujer: ') )
+    print('Valor de la actividad física semanal: \n 1.2: poco o ningún ejercicio \n 1.375: ejercicio ligero (1 a 3 días a la semana) \n 1.55: ejercicio moderado (3 a 5 días a la semana) \n 1.725: deportista (6 a 7 días a la semana) \n 1.9: atleta (entrenamientos mañana y tarde))')
+    valor_actividad = float( input('Ingrese el valor de la actividad física semanal: ') )
+    calorias = calc.calcular_calorias_en_actividad( peso, altura, edad, valor_genero, valor_actividad )
+    print('Tú perdida de calorias dependiendo de la actividad que relices:', calorias ,'cal')
+
+def inicar_aplicacion() -> None:
+    print('En está funcion se van a calcular las calorias que se pierden dpendiendo de la actividad semanal que realices')
+    ejecutar_calcular_calorias_en_actividad()
+
+inicar_aplicacion()
