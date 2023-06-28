@@ -73,14 +73,12 @@ def consumo_calorias_recomendado_para_adelgazar( peso: float, altura: float, eda
         valor_genero: Valor que varía según el género de la persona: en caso de ser masculino debe
                       ser 5 y en caso de ser femenino debe ser -161
     Retorno
-        calorias_para_adelgazar: Una cadena indicando el rango de calorias que una perosna debe
+        calorias_adelgazar: Una cadena indicando el rango de calorias que una perosna debe
                                   consumir si desea adelgazar
     """
     calorias_reposo = calcular_calorias_en_reposo( peso, altura, edad, valor_genero )
     minimo_calorias = round( calorias_reposo - ( calorias_reposo * 0.20 ), 2 )
     maximo_calorias = round( calorias_reposo - ( calorias_reposo * 0.15 ), 2 )
-    cadena = "Para adelgazar es recomendado que consumas entre: " + str(minimo_calorias) + " y " + str(maximo_calorias) + " calorías al día."
-    return cadena
-
-print( consumo_calorias_recomendado_para_adelgazar( 58, 169, 21, -161 ) )
+    calorias_adelgazar = "Para adelgazar es recomendado que consumas entre: " + str(minimo_calorias) + " y " + str(maximo_calorias) + " calorías al día."
+    return calorias_adelgazar
 
