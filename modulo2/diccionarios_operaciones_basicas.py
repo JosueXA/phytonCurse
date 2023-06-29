@@ -60,6 +60,7 @@ print( alias )
 copia = opuestos.copy()
 print( copia )
 
+# Verificar la mutabilidad de los diccionarios al momento de ser modificados
 alias["derecha"] = "izquierda"
 print( opuestos )
 print( alias )
@@ -70,6 +71,7 @@ print( opuestos )
 print( alias )
 print( copia )
 
+# Eliminar un elemento dentro del objeto con del
 nuevo_inventario = { "bananos": 312, **inventario }
 print( nuevo_inventario )
 del nuevo_inventario["bananos"]
