@@ -36,7 +36,7 @@ def validar_palindromo ( cadena: str ) -> bool:
 
     Retorno:
         booleano: Si es un palíndromo retorna True
-                  Si no es un palíndromo retorna True
+                  Si no es un palíndromo retorna False
     """
     inicio = 0
     fin = len( cadena ) - 1
