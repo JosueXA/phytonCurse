@@ -30,6 +30,5 @@ def picas_y_fijas ( numero_secreto: int, intento: int ) -> dict:
             
 
 
-
 print(picas_y_fijas(1234, 1325))
 
